@@ -1,0 +1,119 @@
+.skillsGLobalContainer{
+    background-color: rgba(122, 122, 122, 0.199);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 120px;
+}
+
+.skillsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.skillsTitle{
+    font-size: 80px;
+}
+
+.ImgContainer{
+    background-color: white;
+    width: 180px;
+    height:180px;
+    transition: 1s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textBehind{
+    font-size: 43px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 0;
+}
+
+.ImgContainer img{
+    max-width: 70%;
+    max-height: 70%;
+    position: relative;
+    background-color: white;
+    transition: 1s;
+}
+
+.ImgContainer:hover{
+    border: 30px solid #fca311;
+    width: 190px;
+    height: 190px;
+    transition: 1s;
+}
+
+.ImgContainer:hover img{
+    opacity: 0;
+    -webkit-transition: opacity 1500ms;
+    -moz-transition: opacity 1500ms;
+    -o-transition: opacity 1500ms;
+    -ms-transition: opacity 1500ms;
+    transition: opacity 1500ms;
+}
+
+@media (min-width: 320px) and (max-width: 587px) {
+
+    .skillsGlobalContainer{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .skillsContainer{
+        gap: 20px;
+    }
+
+    .skillsTitle{
+        font-size: 30px;
+    }
+
+    .ImgContainer{
+        width: 80px;
+        height: 80px;
+    }
+
+    .ImgContainer:hover{
+        width: 90px;
+        height: 90px;
+    }
+
+    .textBehind{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 588px) and (max-width: 980px) {
+
+    .skillsTitle{
+        font-size: 50px;
+    }
+
+    .ImgContainer{
+        width: 120px;
+        height: 120px;
+    }
+
+    .ImgContainer:hover{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .textBehind{
+        font-size: 25px;
+    }
+}

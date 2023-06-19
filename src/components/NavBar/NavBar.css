@@ -1,0 +1,71 @@
+.headerContainer{
+    width: 100%;
+    height: 70px;
+    position:fixed;
+    z-index: 1;
+    box-shadow: 1px 0 10px 1px black;
+}
+
+.headerList{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: end;    
+    padding-bottom: 10px;
+    margin-right: 20px;
+    gap: 60px;
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+    "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+i{
+    color:rgb(243, 179, 42);
+    font-size: 25px;
+}
+
+a.headerOption{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+a.headerOption:hover{
+    text-decoration: underline;
+    text-decoration-color: #fca311;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+@media (min-width: 320px) and (max-width: 587px) {
+
+    .headerContainer{
+        height: 40px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .headerList{
+        gap: 8px;
+        font-size: 10px;
+        margin-right: 10px;
+        padding-left: 0;
+    }
+
+    .headerList i{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 588px) and (max-width: 980px) {
+
+    .headerList{
+        font-size: 15px;
+        gap: 25px;
+    }
+    
+    .headerList i{
+        font-size: 20px;
+    }
+}

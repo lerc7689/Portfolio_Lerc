@@ -1,0 +1,154 @@
+.homeContainer{
+  display: flex;    
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/img/Background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.typeWriter h1{
+    padding-left: 40px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #fca311; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size: 65px;
+    color: white;
+    padding-bottom: 15px;
+    font: oblique bold 420% cursive;
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+  }
+
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+.t-shadow {
+  text-shadow: 5px 5px #fca311;
+}
+    
+    .typeWriter p{
+        margin-left: 40px;
+        width: 40vw;
+        font-size: 25px;
+        border-radius: 8px;
+        padding: 5px;
+        color: white;
+    }
+
+    .homeAnimation {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-bottom: 100%;
+          width: 50px
+        }
+      
+        to {
+          margin-bottom: 0%;
+          width: 40vw;
+        }
+    }
+
+.downloadCV a{
+  text-decoration: none;
+}
+
+.downloadCV{
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fca311;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  position:fixed;
+  z-index: 10;
+  right: 10px;
+  bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 0 5px 1px black;
+  cursor: pointer;
+}
+
+.downloadCV:hover{
+  background-color: #cf8d23;
+}
+
+.downloadCV:active{
+  background-color: #9e6b19;
+}
+
+@media (min-width: 320px) and (max-width: 587px) {
+
+  .homeContainer{
+    margin-bottom: 60px;
+  }
+
+  .typeWriter h1{
+    font-size: 20px;
+  }
+
+  .typeWriter p{
+    margin-left: 40px;
+    width: 80vw;
+    font-size: 15px;
+  }
+
+  .downloadCV{
+    width: 60px;
+    height: 60px;
+  }
+
+  .downloadCV a{
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 588px) and (max-width: 980px) {
+
+  .typeWriter h1{
+    font-size: 40px;
+  }
+  .typeWriter p{
+    font-size: 20px;
+  }
+
+  .downloadCV{
+    width: 80px;
+    height: 80px;
+  }
+
+  .downloadCV a{
+    font-size: 15px;
+  }
+}
