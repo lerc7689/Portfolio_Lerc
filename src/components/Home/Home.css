@@ -51,31 +51,31 @@
   text-shadow: 5px 5px #fca311;
 }
     
-    .typeWriter p{
-        margin-left: 40px;
-        width: 40vw;
-        font-size: 25px;
-        border-radius: 8px;
-        padding: 5px;
-        color: white;
-    }
+.typeWriter p{
+  margin-left: 40px;
+  width: 40vw;
+  font-size: 25px;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+}
 
-    .homeAnimation {
-        animation-duration: 3s;
-        animation-name: slidein;
-      }
+.homeAnimation {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
       
-      @keyframes slidein {
-        from {
-          margin-bottom: 100%;
-          width: 50px
-        }
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    width: 50px
+  }
       
-        to {
-          margin-bottom: 0%;
-          width: 40vw;
-        }
-    }
+  to {
+    margin-bottom: 0%;
+    width: 40vw;
+  }
+}
 
 .downloadCV a{
   text-decoration: none;
@@ -123,7 +123,9 @@
     width: 80vw;
     font-size: 15px;
   }
-
+  .t-shadow {
+    text-shadow: 3px 3px #fca311;
+  }
   .downloadCV{
     width: 60px;
     height: 60px;
