@@ -4,19 +4,20 @@ import UserApi from "../../assets/img/imgProjects/UserApi.png"
 import RickAndMortyApp  from "../../assets/img/imgProjects/Rick&MortyApp.png"
 import PokemonApp  from "../../assets/img/imgProjects/PokemonApp.png"
 import ECommerce from "../../assets/img/imgProjects/E-Commerce-React.png"  
+// import { useEffect } from "react";
+import { useRef } from "react";
 
 const Portfolio = () =>{
-    const imagesContainer = document.getElementById("myDiv");
-
+    const scrollReference = useRef(null);
+    
     const leftHandle = () =>{
-        imagesContainer.scrollLeft -= 440; // Ajusta la cantidad de desplazamiento aquí
-        console.log(imagesContainer.scrollLeft)
+        if(scrollReference.current)
+        scrollReference.current.scrollLeft -= 400; // Ajusta la cantidad de desplazamiento aquí
     }
 
     const rightHandle = () =>{
-        
-        imagesContainer.scrollLeft += 440; // Ajusta la cantidad de desplazamiento aquí
-        console.log(imagesContainer.scrollLeft)
+        if(scrollReference.current)
+        scrollReference.current.scrollLeft += 400; // Ajusta la cantidad de desplazamiento aquí
     }
 
     return(
@@ -28,7 +29,7 @@ const Portfolio = () =>{
         <button className="backBtn" onClick={leftHandle}><i class="fa-solid fa-angle-left"></i></button>
         <button className="nextBtn"onClick={rightHandle}><i class="fa-solid fa-chevron-right"></i></button>
 
-        <div id="myDiv" className='portfolioGeneralImgesContainer'>
+        <div ref={scrollReference} className='portfolioGeneralImgesContainer'>
             <div className="portfolioSingleImgContainer">
                 <img src={WeatherAppImg} alt="WeatherAppImg img" /> 
                     <div className="portfolioSingleImgText">

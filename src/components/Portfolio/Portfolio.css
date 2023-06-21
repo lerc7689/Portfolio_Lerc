@@ -23,6 +23,7 @@
     padding-left: 900px;
     border-radius: 10px;
     background-color: rgb(5, 5, 36);
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -75,6 +76,9 @@
 
 .portfolioSingleImgText p:active{
     background-color: #c98415;
+}
+.portfolioSingleImgText a{
+    text-decoration: none;
 }
 
 .portfolioSingleImgContainer:hover .portfolioSingleImgText{

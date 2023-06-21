@@ -25,15 +25,13 @@ i{
     font-size: 25px;
 }
 
-a.headerOption{
+.headerOption{
     text-decoration: none;
     color: white;
     transition: 0.5s;
 }
 
-a.headerOption:hover{
-    text-decoration: underline;
-    text-decoration-color: #fca311;
+.headerOption:hover{
     padding-bottom: 10px;
     transition: 0.5s;
 }
