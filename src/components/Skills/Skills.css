@@ -36,7 +36,7 @@
 }
 
 .textBehind{
-    font-size: 43px;
+    font-size: 33px;
     font-weight: 600;
     position: absolute;
     z-index: 0;
@@ -93,7 +93,7 @@
     }
 
     .textBehind{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -114,6 +114,6 @@
     }
     
     .textBehind{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
