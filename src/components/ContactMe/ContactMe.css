@@ -34,7 +34,9 @@
 .contactMeContainer form input,textarea{
     box-shadow: 0 0 5px 1px rgb(134, 134, 134);
     width: 80%;
+    max-width: 100%;
     height: 35px;
+    max-height: 100%;
     border-radius: 10px;
     border: none;
     padding-left: 10px;

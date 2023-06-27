@@ -2,10 +2,24 @@ import "./AboutMe.css";
 import aboutMeImg from "../../assets/img/imgAboutMe.jpg"
 
 const AboutMe = () =>{
+
+    window.addEventListener('scroll', function() {
+        var imgContainer = document.querySelector(".imgContainer");
+        var AboutMeInfoContainer = document.querySelector(".AboutMeInfoContainer");
+        var scrollPosition = window.scrollY;
+        var threshold = window.innerHeight * 2; // 100vh
+        console.log(threshold)
+        if (scrollPosition = threshold) {
+            
+            imgContainer.classList.add('visible_imgContainer');
+            AboutMeInfoContainer.classList.add('visible_AboutMeInfoContainer');
+        } 
+    });
+
     return(
     <>
             <a name="aboutMe"></a>
-            <section className="aboutMeContainer">
+            <section className="aboutMeContainer" id="imgContainer">
                 <div className="imgContainer">
                     <img src={aboutMeImg} alt="" />
                 </div>

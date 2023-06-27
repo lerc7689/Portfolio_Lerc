@@ -144,10 +144,11 @@
 @media (min-width: 320px) and (max-width: 587px) {
 
     .portfolio{
-        height: 60vh;
         width: 100%;
-        margin: 0;
         margin-bottom: 60px;
+        justify-content: center;
+        align-items: center;
+        background-color: #df9216;
     }
 
     .portfolioTitle{
@@ -156,8 +157,12 @@
 
     .portfolioGeneralImgesContainer{
         padding: 10px;
-        height: 220px;
+        padding-left: 610px;
+        /* height: 220px;
+        max-width: auto;
+        overflow:scroll; */
         gap: 20px;
+        background-color: #c98415;
     }
 
     .backBtn {
