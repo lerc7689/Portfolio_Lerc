@@ -10,12 +10,18 @@ const ContactMe = () =>{
         <section className="contactMeContainer">
             <h1 className="contactMeTitle">Contact me</h1>
             <form action="https://formsubmit.co/luiseduardo7689@gmail.com" method="POST">
-                    <label htmlFor="name">Complete name</label>
-                    <input type="text" className="form-control" name='name' id="name" placeholder="name..."/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" className="form-control" name='email' id="email" placeholder="email..."/>
-                    <label htmlFor="message">Message</label>
-                    <textarea className="form-control" name='message' id="message" rows="3" placeholder="write a message..."></textarea>
+                    <div>
+                        <label htmlFor="name">Complete name</label>
+                        <input type="text" className="form-control" name='name' id="name" placeholder="name..."/>
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" className="form-control" name='email' id="email" placeholder="email..."/>
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message</label>
+                        <textarea className="form-control" name='message' id="message" rows="3" placeholder="write a message..."></textarea>
+                    </div>
                 <button  type="submit" onClick={notify}>Send</button>
 
                 <ToastContainer />
