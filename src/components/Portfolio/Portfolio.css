@@ -165,12 +165,12 @@
     }
 
     .backBtn {
-        left: 0px;
+        left: 10px;
         top: 160px;
     }
 
     .nextBtn {
-        right: 0px;
+        right: 10px;
         top: 160px;
     }
 
