@@ -144,11 +144,11 @@
 @media (min-width: 320px) and (max-width: 587px) {
 
     .portfolio{
-        width: 100%;
+        width: 100vw;
+        margin:0;
         margin-bottom: 60px;
         justify-content: center;
         align-items: center;
-        background-color: #df9216;
     }
 
     .portfolioTitle{
@@ -157,22 +157,25 @@
 
     .portfolioGeneralImgesContainer{
         padding: 10px;
-        padding-left: 610px;
+        /* padding-left: 610px; */
         /* height: 220px;
         max-width: auto;
         overflow:scroll; */
+        width: 320px;
         gap: 20px;
-        background-color: #c98415;
+        background-color: rgb(5, 5, 36);
     }
 
     .backBtn {
         left: 0px;
         top: 160px;
+        z-index: 5;
     }
 
     .nextBtn {
         right: 0px;
         top: 160px;
+        z-index: 5;
     }
 
     .backBtn i,
