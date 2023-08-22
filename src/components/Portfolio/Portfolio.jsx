@@ -12,22 +12,24 @@ const Portfolio = () =>{
     
     const leftHandle = () =>{
         if(scrollReference.current)
+        console.log(scrollReference.current.scrollLeft)
         scrollReference.current.scrollLeft -= 400; // Ajusta la cantidad de desplazamiento aquí
     }
 
     const rightHandle = () =>{
         if(scrollReference.current)
+        console.log(scrollReference.current.scrollLeft)
         scrollReference.current.scrollLeft += 400; // Ajusta la cantidad de desplazamiento aquí
     }
 
     return(
     <>
       <a name="portfolio"></a>
-      <section className='portfolio'>
+      <section className='portfolio' id="portfolio">
         <h2 className='portfolioTitle'>Portfolio</h2>
 
-        <button className="backBtn" onClick={leftHandle}><i class="fa-solid fa-angle-left"></i></button>
-        <button className="nextBtn"onClick={rightHandle}><i class="fa-solid fa-chevron-right"></i></button>
+        <button className="backBtn" onClick={leftHandle}><i className="fa-solid fa-angle-left"></i></button>
+        <button className="nextBtn"onClick={rightHandle}><i className="fa-solid fa-chevron-right"></i></button>
 
         <div ref={scrollReference} className='portfolioGeneralImgesContainer'>
             <div className="portfolioSingleImgContainer">

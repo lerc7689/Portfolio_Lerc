@@ -7,7 +7,7 @@ const ContactMe = () =>{
     return(
     <>
         <a name="contactMe"></a>
-        <section className="contactMeContainer">
+        <section className="contactMeContainer" id="contactMe">
             <h1 className="contactMeTitle">Contact me</h1>
             <form action="https://formsubmit.co/luiseduardo7689@gmail.com" method="POST">
                     <div>

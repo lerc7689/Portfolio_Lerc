@@ -1,5 +1,6 @@
 import "./AboutMe.css";
-import aboutMeImg from "../../assets/img/imgAboutMe.jpg"
+import aboutMeImg from "../../assets/img/imgAboutMe.jpeg"
+// import { useEffect } from "react";
 
 const AboutMe = () =>{
 
@@ -7,19 +8,24 @@ const AboutMe = () =>{
         var imgContainer = document.querySelector(".imgContainer");
         var AboutMeInfoContainer = document.querySelector(".AboutMeInfoContainer");
         var scrollPosition = window.scrollY;
-        var threshold = window.innerHeight * 2; // 100vh
-        console.log(threshold)
+        var threshold = window.innerHeight * 3; // 100vh
+
         if (scrollPosition = threshold) {
-            
             imgContainer.classList.add('visible_imgContainer');
             AboutMeInfoContainer.classList.add('visible_AboutMeInfoContainer');
-        } 
+        } else{
+            imgContainer.classList.remove('visible_imgContainer');
+            AboutMeInfoContainer.classList.remove('visible_AboutMeInfoContainer');
+        }
     });
 
+    // useEffect(()=>{
+
+    // },[])
     return(
     <>
             <a name="aboutMe"></a>
-            <section className="aboutMeContainer" id="imgContainer">
+            <section className="aboutMeContainer" id="aboutMe">
                 <div className="imgContainer">
                     <img src={aboutMeImg} alt="" />
                 </div>

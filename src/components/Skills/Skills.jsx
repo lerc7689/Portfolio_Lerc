@@ -6,15 +6,17 @@ import reactImg from "../../assets/img/react.png"
 import reactRouterImg from "../../assets/img/router.png"
 import reactReduxImg from "../../assets/img/redux.png"
 import gitImg from "../../assets/img/git.png"
+import gitHubImg from "../../assets/img/gitHub.png"
 import nodeJsImg from "../../assets/img/node.png"
 import expressJsImg from "../../assets/img/express-js.png"
 import postgresJsImg from "../../assets/img/postgresql.png"
+import mongoDBJsImg from "../../assets/img/mongoDB.jpg"
 
 const Skills = () =>{
     return(
     <>
       <a name="skills"></a>
-        <section className="skillsGLobalContainer">
+        <section className="skillsGLobalContainer" id="skills">
           <h2 className="skillsTitle">My Skills</h2>
           <div className="skillsContainer">
             <div className="ImgContainer"><p className="textBehind">Html</p><img  src={htmlImg} alt="" /></div>
@@ -24,9 +26,11 @@ const Skills = () =>{
             <div className="ImgContainer"><p className="textBehind">Router</p><img src={reactRouterImg} alt="" /></div>
             <div className="ImgContainer"><p className="textBehind">Redux</p><img src={reactReduxImg} alt="" /></div>
             <div className="ImgContainer"><p className="textBehind">Git</p><img src={gitImg} alt="" /></div>
+            <div className="ImgContainer"><p className="textBehind">GitHub</p><img src={gitHubImg} alt="" /></div>
             <div className="ImgContainer"><p className="textBehind">NodeJs</p><img src={nodeJsImg} alt="" /></div>
             <div className="ImgContainer"><p className="textBehind">Express</p><img src={expressJsImg} alt="" /></div>
             <div className="ImgContainer"><p className="textBehind">Postgres</p><img src={postgresJsImg} alt="" /></div>
+            <div className="ImgContainer"><p className="textBehind">MongoDB</p><img src={mongoDBJsImg} alt="" /></div>
           </div>
         </section>
     </>)

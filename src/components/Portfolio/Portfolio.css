@@ -1,11 +1,18 @@
 .portfolio{
-    margin: 40px;
+    /* margin: 40px; */
     margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     position: relative;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1s;
+    transform: translateY(100px);
+}
+.show{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .portfolioTitle{
@@ -39,10 +46,19 @@
     border-radius: 10px;
     background-color: rgba(87, 92, 86, 0.548);
     position: relative;
+    overflow: hidden;
+}
+
+.portfolioSingleImgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
 }
 
 .portfolioSingleImgText{
-   border-radius: 10px;
+   /* border-radius: 10px; */
    padding: 5px;
    position: absolute;
    font-size: 20px;
@@ -53,25 +69,29 @@
    transition: 0.5s;
    display: flex;
    flex-direction: column;
-   gap: 5px;
+   gap: 15px;
    justify-content: center;
    align-items: center;
+   background-color: rgba(0, 0, 0, 0.692);
+   top:-100%
 }
 
 .portfolioSingleImgText p{
     padding: 5px;
     border-radius: 15px;
-    background-color: #fca311;
-    border: 2px solid black;
-    color: black;
-}
-
-.portfolioSingleImgText p i{
-    color: black;
+    background-color: transparent;
+    border: 2px solid #fca311;
+    color: #fca311;
+    transition: 0.5s;
 }
 
 .portfolioSingleImgText p:hover{
-    background-color: #df9216;
+    background-color: #fca311;
+    color: black;
+    transition: 0.5s;
+}
+.portfolioSingleImgText p:hover i{
+    color: black;
 }
 
 .portfolioSingleImgText p:active{
@@ -83,15 +103,8 @@
 
 .portfolioSingleImgContainer:hover .portfolioSingleImgText{
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.692);
-}
-
-.portfolioSingleImgContainer img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: 0.5s;
-    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.692); */
+    top:0;
 }
 
 .backBtn ,
@@ -104,13 +117,13 @@
 }
 
 .backBtn {
-    left: 40px;
+    left: 65px;
     top: 200px;
     z-index: 5;
 }
 
 .nextBtn {
-    right: 40px;
+    right: 65px;
     top: 200px;
     z-index: 5;
 }
@@ -162,6 +175,10 @@
         width: 320px;
         gap: 20px;
         background-color: rgb(5, 5, 36);
+        padding-left: 1700px;
+    }
+    .portfolioSingleImgContainer{
+        min-width: 300px;
     }
 
     .backBtn {

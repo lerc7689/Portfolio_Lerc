@@ -3,61 +3,107 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/img/Background.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.664)),url("../../assets/img/Background.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-color: rgb(2, 2, 27); */
   display: flex;
-  justify-content: start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: start; */
+  /* align-items: center; */
   margin-bottom: 120px;
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* filter: blur(10px); */
+  /* opacity: 0; */
+  /* transition: opacity 0.8s; */
+}
+/* .show{
+  opacity: 1;
+} */
+
+.homeImgContainer{
+  width: 250px;
+  height: 250px;
+  /* margin-bottom: 50px; */
+  /* scroll-margin-top: 100vh;
+  opacity:0;
+  transition: opacity 0.5s;    */
+  border-radius: 25%;
+  overflow: hidden;
+  margin-left: 10%;
+  background-color: #cf8d23;
+}
+.homeImgContainer img{
+  width: 100%;
+  /* height: auto; */
+}
+.homeImgContainer {
+  display: inline-block;
+  animation: floatAnimation 4s ease-in-out infinite; /* 4 segundos de duración, aceleración suave, infinito */
 }
 
-.typeWriter h1{
-    padding-left: 40px;
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial y final */
+  }
+  50% {
+    transform: translateY(-20px); /* Posición en la mitad de la animación */
+  }
+}
+
+.typeWriter{
+  width: 500px;
+  /* background-color: aqua; */
+  margin-left: 40px;
+  text-align: center;
+}
+.typeWriter h1 {
+    /* margin-left: 40px; */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #fca311; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    font-size: 65px;
+    letter-spacing: .15em; /*  Adjust as needed */
+    /*font-size: 65px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
     color: white;
-    padding-bottom: 15px;
-    font: oblique bold 420% cursive;
+    font: oblique bold 180% cursive;
+    font-size: 30px;
+    /* background-color: #9e6b19;  */
     animation: 
-      typing 1.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-  }
-
-.t-stroke {
-  color: transparent;
-  -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-width: 2px;
-  -moz-text-stroke-color: #000000;
-  -webkit-text-stroke-color: #ffffff;
+      typing 3s steps(100, end),
+      blink-caret .50s step-end infinite;
+} 
+.typeWriter h1 span{
+  color: rgb(243, 179, 42);
 }
-
-.t-shadow {
-  text-shadow: 5px 5px #fca311;
+  
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
-    
+  
+/*The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(243, 179, 42);    
+}}
+
 .typeWriter p{
-  margin-left: 40px;
-  width: 40vw;
+  /* background-color: green; */
+  /* margin-left: 40px; */
   font-size: 25px;
   border-radius: 8px;
   padding: 5px;
   color: white;
+  /* background-color: #000000; */
+  text-align: justify;
 }
 
 .homeAnimation {
@@ -68,7 +114,7 @@
 @keyframes slidein {
   from {
     margin-bottom: 100%;
-    width: 50px
+    width: 40vw
   }
       
   to {
@@ -88,18 +134,27 @@
   justify-content: center;
   align-items: center;
   background-color: #fca311;
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  border-radius: 40%;
+  width: 150px;
+  height: 30px;
   position:fixed;
   z-index: 10;
   right: 10px;
   bottom: 20px;
   padding: 10px;
-  box-shadow: 0 0 5px 1px black;
+  /* box-shadow: 0 0 5px 1px black; */
   cursor: pointer;
+  animation: floatAnimation 4s ease-in-out infinite; /* 4 segundos de duración, aceleración suave, infinito */
 }
 
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial y final */
+  }
+  50% {
+    transform: translateY(-20px); /* Posición en la mitad de la animación */
+  }
+}
 .downloadCV:hover{
   background-color: #cf8d23;
 }
@@ -113,20 +168,25 @@
   .homeContainer{
     margin-bottom: 60px;
     height: 100vh;   
+    /* align-items: center; */
   }
 
+  .homeImgContainer{
+    width: 180px;
+    height: 200px;
+    /* margin-left: 25%; */
+  }
+  .typeWriter{
+    width: 250px;
+  }
   .typeWriter h1{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .typeWriter p{
-    margin-left: 40px;
-    width: 80vw;
     font-size: 15px;
   }
-  .t-shadow {
-    text-shadow: 2px 2px #fca311;
-  }
+
   .downloadCV{
     width: 60px;
     height: 60px;
@@ -139,8 +199,17 @@
 
 @media (min-width: 588px) and (max-width: 980px) {
 
+  .homeImgContainer{
+    width: 180px;
+    height: 200px;
+    /* margin-left: 25%; */
+  }
+  .typeWriter{
+    width: 450px;
+  }
+
   .typeWriter h1{
-    font-size: 40px;
+    font-size: 28px;
   }
   .typeWriter p{
     font-size: 20px;
