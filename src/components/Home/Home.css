@@ -22,6 +22,17 @@
   opacity: 1;
 } */
 
+.typeWriter{
+  width: 500px;
+  /* background-color: aqua; */
+  margin-left: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .homeImgContainer{
   width: 250px;
   height: 250px;
@@ -31,7 +42,7 @@
   transition: opacity 0.5s;    */
   border-radius: 25%;
   overflow: hidden;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   background-color: #cf8d23;
 }
 .homeImgContainer img{
@@ -52,24 +63,19 @@
   }
 }
 
-.typeWriter{
-  width: 500px;
-  /* background-color: aqua; */
-  margin-left: 40px;
-  text-align: center;
-}
+
 .typeWriter h1 {
     /* margin-left: 40px; */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #fca311; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /*  Adjust as needed */
+    letter-spacing: .05em; /*  Adjust as needed */
     /*font-size: 65px;*/
     margin-top: 10px;
     margin-bottom: 20px;
     color: white;
-    font: oblique bold 180% cursive;
+    /* font: oblique bold 180% cursive; */
     font-size: 30px;
     /* background-color: #9e6b19;  */
     animation: 
@@ -83,7 +89,7 @@
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 70% }
 }
   
 /*The typewriter cursor effect */

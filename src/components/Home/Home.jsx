@@ -12,9 +12,9 @@ const Home = () =>{
 
 
             <div className="typeWriter ">
-            <div className='homeImgContainer'>
-                <img src={homeImgContainer} alt="" />
-            </div>
+                <div className='homeImgContainer'>
+                    <img src={homeImgContainer} alt="" />
+                </div>
                 <h1>HEY, <span>I'M LUIS RAMIREZ</span></h1>
                 <p className="homeAnimation">A focused Web Developer building the backend and the Frontend of 
                                             Websites and Web Applications that leads to the success of the 

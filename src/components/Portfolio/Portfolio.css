@@ -23,11 +23,11 @@
     width: 80vw;
     display: flex;
     overflow-x: scroll;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: center;
     gap: 20px;
     padding: 50px;
-    padding-left: 900px;
+    /* padding-left: 900px; */
     border-radius: 10px;
     background-color: rgb(5, 5, 36);
     scroll-behavior: smooth;
@@ -114,6 +114,7 @@
     border: none;
     background-color: rgb(5, 5, 36);
     position: absolute;
+    transition: 0.5s;
 }
 
 .backBtn {
@@ -128,17 +129,24 @@
     z-index: 5;
 }
 
+.backBtn i,
+.nextBtn i{
+    font-size: 40px;
+    transition: 0.5s;
+}
+
 .backBtn:hover i,
 .nextBtn:hover i{
-
     color: rgb(5, 5, 36);
+    transition: 0.5s;
 }
 
 .backBtn:hover,
 .nextBtn:hover{
     background-color: #fca311;
-    color: rgb(5, 5, 36);
+    /* color: rgb(5, 5, 36); */
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .backBtn:active,
@@ -149,11 +157,6 @@
 .backBtn:active i,
 .nextBtn:active i{
     color: #fca311;
-}
-
-.backBtn i,
-.nextBtn i{
-    font-size: 40px;
 }
 
 @media (min-width: 320px) and (max-width: 587px) {
