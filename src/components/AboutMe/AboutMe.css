@@ -7,7 +7,7 @@
     align-items: center;
     gap: 70px;
     margin-left: 5%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     /* background-color: aqua; */
     /* opacity: 0;
     transition: opacity 0.5s;
@@ -17,7 +17,7 @@
 }
 
 .imgContainer{
-    width: 280px;
+    width: 340px;
     /* height: 300px; */
     /* margin-bottom: 50px; */
     /* scroll-margin-top: 100vh; */
@@ -73,6 +73,7 @@
 .aboutMeMessage {
     font-family: Poppins,sans-serif;
     text-align: justify;  
+    font-size: larger;
 }
 
 .aboutMeList{

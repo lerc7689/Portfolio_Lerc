@@ -7,7 +7,7 @@ const Home = () =>{
         <a name="home"></a>
         <div className="homeContainer" id="home">
             <div className='downloadCV'>
-                <a href="./src/assets/LuisRamirezCV.pdf" download="Luis Ramirez CV">Download CV</a>
+                <a href="./src/assets/LuisRamirezCV.pdf" download="Luis Ramirez CV">Download CV <br/><br/><i className="fa-solid fa-angles-down"></i></a>
             </div>
 
 

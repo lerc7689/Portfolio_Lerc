@@ -3,8 +3,8 @@ import "./NavBar.css";
 
 const NavBar = () =>{
     const [isDarkMode, setIsDarkMode] = useState(false)
-    const sunIcon = document.getElementById('sun')
-    const moonIcon = document.getElementById('moon')
+    // const sunIcon = document.getElementById('sun')
+    // const moonIcon = document.getElementById('moon')
 
     const darkMode = () =>{
         document.body.classList.toggle("darkMode");
@@ -82,16 +82,27 @@ const NavBar = () =>{
                     entry.target.classList.remove('show')
                 }
             });
-        }, {threshold: 0.1});
+        }, {threshold: 0.3});
 
         sections.forEach(section => {
         observer.observe(section);
         });
         ///
     });
-    useEffect(()=>{
-
-    })
+/*
+        useEffect(() => {
+          // Función para realizar un desplazamiento automático al cargar la pantalla
+          function scrollToTop() {
+            window.scrollTo({
+              top: 1, // Desplazarse al inicio de la página
+              behavior: 'smooth' // Animación suave
+            });
+          }
+      
+          // Realizar el desplazamiento automático al cargar la pantalla
+          scrollToTop();
+      
+        }, []);*/
     return(
     <>
         <div id="header" className="headerContainer">

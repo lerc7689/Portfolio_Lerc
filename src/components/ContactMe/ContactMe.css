@@ -79,10 +79,13 @@
     font-weight: 700;
     color: white;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .contactMeContainer form button:hover{
-    background-color: #d89428;
+    /* background-color: #d89428; */
+    width: 25%;
+    transition: 0.5s;
 }
 
 .contactMeContainer form button:active{

@@ -12,7 +12,7 @@
   justify-content: center;
   /* justify-content: start; */
   /* align-items: center; */
-  margin-bottom: 120px;
+  margin-bottom: 80px;
   /* font-family: 'Courier New', Courier, monospace; */
   /* filter: blur(10px); */
   /* opacity: 0; */
@@ -114,12 +114,12 @@
 @keyframes slidein {
   from {
     margin-bottom: 100%;
-    width: 40vw
+    /* width: 40vw */
   }
       
   to {
     margin-bottom: 0%;
-    width: 40vw;
+    /* width: 40vw; */
   }
 }
 
@@ -132,19 +132,35 @@
   font-weight: 600;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: #fca311;
+  /* border: 2px solid #fca311; */
   border-radius: 8px;
   width: 150px;
-  height: 30px;
+  height: 40px;
+  overflow: hidden;
   position:fixed;
   z-index: 10;
   right: 10px;
   bottom: 20px;
   padding: 10px;
   /* box-shadow: 0 0 5px 1px black; */
+  transition: 0.3s;
   cursor: pointer;
   animation: floatAnimation 4s ease-in-out infinite; /* 4 segundos de duración, aceleración suave, infinito */
+}
+.downloadCV i{
+  color: rgb(2, 2, 27);
+}
+
+.downloadCV:hover{
+  /* background-color: #cf8d23; */
+  height: 70px;
+  transition: 0.3s;
+}
+
+.downloadCV:active{
+  background-color: #9e6b19;
 }
 
 @keyframes floatAnimation {
@@ -155,13 +171,7 @@
     transform: translateY(-20px); /* Posición en la mitad de la animación */
   }
 }
-.downloadCV:hover{
-  background-color: #cf8d23;
-}
 
-.downloadCV:active{
-  background-color: #9e6b19;
-}
 
 @media (min-width: 320px) and (max-width: 587px) {
 
