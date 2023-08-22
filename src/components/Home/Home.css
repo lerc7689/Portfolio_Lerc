@@ -134,7 +134,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fca311;
-  border-radius: 40%;
+  border-radius: 8px;
   width: 150px;
   height: 30px;
   position:fixed;
