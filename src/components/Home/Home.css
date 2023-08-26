@@ -14,7 +14,6 @@
   /* align-items: center; */
   margin-bottom: 80px;
   /* font-family: 'Courier New', Courier, monospace; */
-  /* filter: blur(10px); */
   /* opacity: 0; */
   /* transition: opacity 0.8s; */
 }
@@ -44,6 +43,7 @@
   overflow: hidden;
   /* margin-left: 10%; */
   background-color: #cf8d23;
+  /* border-radius: 50%; */
 }
 .homeImgContainer img{
   width: 100%;
@@ -161,7 +161,7 @@
 
 .downloadCV:hover{
   /* background-color: #cf8d23; */
-  height: 70px;
+  height: 80px;
   transition: 0.3s;
 }
 

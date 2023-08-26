@@ -9,11 +9,11 @@
     margin-left: 5%;
     margin-bottom: 80px;
     /* background-color: aqua; */
-    /* opacity: 0;
+    opacity: 0;
     transition: opacity 0.5s;
 }
 .show{
-    opacity: 1; */
+    opacity: 1;
 }
 
 .imgContainer{
@@ -23,6 +23,8 @@
     /* scroll-margin-top: 100vh; */
     opacity:0;
     transition: opacity 0.5s;   
+    /* border-radius: 50%;
+    overflow: hidden; */
 }
 
 .visible_imgContainer{

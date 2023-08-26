@@ -9,11 +9,14 @@
     /* display: flex;
     flex-direction: row; */
     /* background-image: linear-gradient(rgba(218, 32, 32, 0.733), rgba(0, 0, 0, 0.664)) */
+    /* filter: blur(10px); */
 }
-.headerContainer i {
+/* .headerContainer i {
     padding: 5px;
     border-radius: 50%; 
-}
+    color:rgb(243, 179, 42);
+    font-size: 20px;
+} */
 /* desde qui */
 .ShortHeaderContainer{
     width: 45px;
@@ -103,6 +106,8 @@
 i{
     color:rgb(243, 179, 42);
     font-size: 20px;
+    padding: 5px;
+    border-radius: 50%; 
 }
 
 .headerOption{
@@ -119,6 +124,7 @@ i{
 .fa-moon{
     color:#96B6C5;
     /* transform: translateX(40px); */
+    width: 30px;
 }
 .fa-sun{
     color:yellow;

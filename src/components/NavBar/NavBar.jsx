@@ -58,51 +58,72 @@ const NavBar = () =>{
             }
         }
      ///
-        const sections = document.querySelectorAll('.homeContainer, .aboutMeContainer, .skillsGLobalContainer, .portfolio, .contactMeContainer');
-        const navLinks = document.querySelectorAll('.headerOption');
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
+     const sections = document.querySelectorAll('.homeContainer, .aboutMeContainer, .skillsGLobalContainer, .portfolio, .contactMeContainer');
+     const navLinks = document.querySelectorAll('.headerOption');
 
-                    entry.target.classList.add('show')
-                    const targetId = entry.target.getAttribute('id');
-                    // console.log(targetId)
+     const observer = new IntersectionObserver(entries => {
+         entries.forEach(entry => {
+             if (entry.isIntersecting) {
 
-                    navLinks.forEach(link => {
-                        if (link.getAttribute('href') === `#${targetId}`) {
-                            link.classList.add('active');
-                        } else {
-                            link.classList.remove('active');
-                        }
+                 entry.target.classList.add('show')
+                 const targetId = entry.target.getAttribute('id');
+                 console.log(targetId)
 
-                    });
+                 navLinks.forEach(link => {
+                     if (link.getAttribute('href') === `#${targetId}`) {
+                         link.classList.add('active');
+                     } else {
+                         link.classList.remove('active');
+                     }
 
-                }else{
-                    entry.target.classList.remove('show')
-                }
-            });
-        }, {threshold: 0.3});
+                 });
 
-        sections.forEach(section => {
-        observer.observe(section);
-        });
-        ///
+             }else{
+                 entry.target.classList.remove('show')
+             }
+         });
+     }, {threshold:0.3});
+
+     sections.forEach(section => {
+     observer.observe(section);
+     });
+
+     ///
     });
-/*
+
         useEffect(() => {
-          // Función para realizar un desplazamiento automático al cargar la pantalla
-          function scrollToTop() {
-            window.scrollTo({
-              top: 1, // Desplazarse al inicio de la página
-              behavior: 'smooth' // Animación suave
+            const sections = document.querySelectorAll('.homeContainer, .aboutMeContainer, .skillsGLobalContainer, .portfolio, .contactMeContainer');
+            const navLinks = document.querySelectorAll('.headerOption');
+    
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+    
+                        entry.target.classList.add('show')
+                        const targetId = entry.target.getAttribute('id');
+                        console.log(targetId)
+    
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href') === `#${targetId}`) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+    
+                        });
+    
+                    }else{
+                        entry.target.classList.remove('show')
+                    }
+                });
+            }, {threshold:0.3});
+    
+            sections.forEach(section => {
+            observer.observe(section);
             });
-          }
       
-          // Realizar el desplazamiento automático al cargar la pantalla
-          scrollToTop();
-      
-        }, []);*/
+        });
     return(
     <>
         <div id="header" className="headerContainer">
@@ -117,7 +138,7 @@ const NavBar = () =>{
                     <li><i className="fa-solid fa-code"></i> <span  id="span"  className="visually">Skills</span></li>
                 </a>
                 <a href="#portfolio" className="headerOption">
-                    <li><i className="fa-solid fa-briefcase"></i>  <span id="span" className="visually">Portfolio</span></li>
+                    <li><i className="fa-solid fa-briefcase"></i>  <span id="span" className="visually">Projects</span></li>
                 </a>
                 <a href="#contactMe" className="headerOption">
                     <li><i className="fa-solid fa-mobile-screen"></i>  <span id="span" className="visually">Contact me</span></li>

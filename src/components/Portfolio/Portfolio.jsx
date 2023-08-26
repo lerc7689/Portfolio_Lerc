@@ -26,7 +26,7 @@ const Portfolio = () =>{
     <>
       <a name="portfolio"></a>
       <section className='portfolio' id="portfolio">
-        <h2 className='portfolioTitle'>Portfolio</h2>
+        <h2 className='portfolioTitle'>Projects</h2>
 
         <button className="backBtn" onClick={leftHandle}><i className="fa-solid fa-angle-left"></i></button>
         <button className="nextBtn"onClick={rightHandle}><i className="fa-solid fa-chevron-right"></i></button>
