@@ -1,9 +1,10 @@
-.homeContainer{
-  display: flex;    
+.homeContainer {
+  display: flex;
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.664)),url("../../assets/img/Background.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.664)),
+    url("../../assets/img/Background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: rgb(2, 2, 27); */
@@ -21,7 +22,7 @@
   opacity: 1;
 } */
 
-.typeWriter{
+.typeWriter {
   width: 500px;
   /* background-color: aqua; */
   margin-left: 40px;
@@ -32,7 +33,7 @@
   align-items: center;
 }
 
-.homeImgContainer{
+.homeImgContainer {
   width: 250px;
   height: 250px;
   /* margin-bottom: 50px; */
@@ -45,7 +46,7 @@
   background-color: #cf8d23;
   /* border-radius: 50%; */
 }
-.homeImgContainer img{
+.homeImgContainer img {
   width: 100%;
   /* height: auto; */
 }
@@ -55,7 +56,8 @@
 }
 
 @keyframes floatAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0); /* Posición inicial y final */
   }
   50% {
@@ -63,45 +65,48 @@
   }
 }
 
-
 .typeWriter h1 {
-    /* margin-left: 40px; */
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #fca311; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .05em; /*  Adjust as needed */
-    /*font-size: 65px;*/
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: white;
-    /* font: oblique bold 180% cursive; */
-    font-size: 30px;
-    /* background-color: #9e6b19;  */
-    animation: 
-      typing 3s steps(100, end),
-      blink-caret .50s step-end infinite;
-} 
-.typeWriter h1 span{
+  /* margin-left: 40px; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #fca311; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /*  Adjust as needed */
+  /*font-size: 65px;*/
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+  /* font: oblique bold 180% cursive; */
+  font-size: 30px;
+  /* background-color: #9e6b19;  */
+  animation: typing 3s steps(100, end), blink-caret 0.5s step-end infinite;
+}
+.typeWriter h1 span {
   color: rgb(243, 179, 42);
 }
-  
+
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 70% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
-  
+
 /*The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(243, 179, 42);    
-}}
+    border-color: rgb(243, 179, 42);
+  }
+}
 
-.typeWriter p{
+.typeWriter p {
   /* background-color: green; */
   /* margin-left: 40px; */
   font-size: 25px;
@@ -116,24 +121,24 @@
   animation-duration: 3s;
   animation-name: slidein;
 }
-      
+
 @keyframes slidein {
   from {
     margin-bottom: 100%;
     /* width: 40vw */
   }
-      
+
   to {
     margin-bottom: 0%;
     /* width: 40vw; */
   }
 }
 
-.downloadCV a{
+.downloadCV a {
   text-decoration: none;
 }
 
-.downloadCV{
+.downloadCV {
   text-align: center;
   font-weight: 600;
   display: flex;
@@ -145,7 +150,7 @@
   width: 150px;
   height: 40px;
   overflow: hidden;
-  position:fixed;
+  position: fixed;
   z-index: 10;
   right: 10px;
   bottom: 20px;
@@ -155,22 +160,23 @@
   cursor: pointer;
   animation: floatAnimation 4s ease-in-out infinite; /* 4 segundos de duración, aceleración suave, infinito */
 }
-.downloadCV i{
+.downloadCV i {
   color: rgb(2, 2, 27);
 }
 
-.downloadCV:hover{
+.downloadCV:hover {
   /* background-color: #cf8d23; */
   height: 80px;
   transition: 0.3s;
 }
 
-.downloadCV:active{
+.downloadCV:active {
   background-color: #9e6b19;
 }
 
 @keyframes floatAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0); /* Posición inicial y final */
   }
   50% {
@@ -178,65 +184,63 @@
   }
 }
 
-
-@media (min-width: 320px) and (max-width: 587px) {
-
-  .homeContainer{
+@media (min-width: 320px) and (max-width: 617px) {
+  .homeContainer {
     margin-bottom: 60px;
-    height: 100vh;   
+    height: 100vh;
     /* align-items: center; */
   }
 
-  .homeImgContainer{
+  .homeImgContainer {
     width: 180px;
     height: 200px;
     /* margin-left: 25%; */
   }
-  .typeWriter{
+  .typeWriter {
     width: 250px;
   }
-  .typeWriter h1{
+  .typeWriter h1 {
     font-size: 15px;
   }
 
-  .typeWriter p{
+  .typeWriter p {
     font-size: 15px;
   }
 
-  .downloadCV{
-    width: 60px;
-    height: 60px;
+  .downloadCV {
+    width: 90px;
+    height: 30px;
   }
 
-  .downloadCV a{
+  .downloadCV a {
     font-size: 10px;
   }
 }
 
-@media (min-width: 588px) and (max-width: 980px) {
-
-  .homeImgContainer{
+@media (min-width: 618px) and (max-width: 980px) {
+  .homeImgContainer {
     width: 180px;
     height: 200px;
     /* margin-left: 25%; */
   }
-  .typeWriter{
+  .typeWriter {
     width: 450px;
   }
 
-  .typeWriter h1{
+  .typeWriter h1 {
     font-size: 28px;
   }
-  .typeWriter p{
+  .typeWriter p {
     font-size: 20px;
   }
 
-  .downloadCV{
-    width: 80px;
-    height: 80px;
+  .downloadCV {
+    width: 130px;
+    height: 30px;
+    padding-top: 5px;
   }
 
-  .downloadCV a{
+  .downloadCV a {
     font-size: 15px;
   }
 }

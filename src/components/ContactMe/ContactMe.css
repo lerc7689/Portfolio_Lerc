@@ -1,112 +1,113 @@
-.contactMeContainer{
-    padding-top: 60px;
-    height: 100vh;
-    background-color: rgb(18, 18, 58);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 50px;
-    opacity: 0;
-    transition: opacity 0.5s, transform 1s;
-    transform: translateY(100px);
+.contactMeContainer {
+  padding-top: 60px;
+  height: 100vh;
+  background-color: rgb(18, 18, 58);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 1s;
+  transform: translateY(100px);
 }
-.show{
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.contactMeTitle{
-    font-size: 40px;
-    color: #fca311;
+.show {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-.contactMeContainer form{
-    border-radius: 10px;
-    background-color: white;
+.contactMeTitle {
+  font-size: 40px;
+  color: #fca311;
+}
+
+.contactMeContainer form {
+  border-radius: 10px;
+  background-color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contactMeContainer form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  color: black;
+}
+.contactMeContainer form div label {
+  font-weight: 700;
+}
+
+.contactMeContainer form div input,
+textarea {
+  box-shadow: 0 0 5px 1px rgb(134, 134, 134);
+  width: 80%;
+  max-width: 100%;
+  height: 35px;
+  max-height: 100%;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.contactMeContainer form div input:focus,
+textarea:focus {
+  background-color: #f5990667;
+}
+
+.contactMeContainer form div textarea {
+  width: 80%;
+  height: 70px;
+  padding: 10px;
+}
+
+.contactMeContainer form button {
+  margin-top: 20px;
+  width: 20%;
+  height: 35px;
+  background-color: #fca311;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contactMeContainer form button:hover {
+  /* background-color: #d89428; */
+  width: 25%;
+  transition: 0.5s;
+}
+
+.contactMeContainer form button:active {
+  background-color: #bd7e19;
+}
+
+@media (min-width: 320px) and (max-width: 617px) {
+  .contactMeTitle {
+    font-size: 30px;
+  }
+  .contactMeContainer form {
+    width: 80vw;
+  }
+  .contactMeContainer form button {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  }
 }
 
-.contactMeContainer form div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    color: black;
-}
-.contactMeContainer form div label{
-    font-weight: 700;
-}
-
-.contactMeContainer form div input,textarea{
-    box-shadow: 0 0 5px 1px rgb(134, 134, 134);
-    width: 80%;
-    max-width: 100%;
-    height: 35px;
-    max-height: 100%;
-    border-radius: 10px;
-    border: none;
-    padding-left: 10px;
-}
-
-.contactMeContainer form div input:focus
-,textarea:focus{
-    background-color: #f5990667;
-}
-
-.contactMeContainer form div textarea{
-    width: 80%;
-    height: 70px;
-    padding: 10px;
-}
-
-.contactMeContainer form button{
-    margin-top: 20px;
-    width: 20%;
-    height: 35px;
-    background-color: #fca311;
-    border-radius: 10px;
-    border: none;
-    font-size: 15px;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.contactMeContainer form button:hover{
-    /* background-color: #d89428; */
-    width: 25%;
-    transition: 0.5s;
-}
-
-.contactMeContainer form button:active{
-    background-color: #bd7e19;
-}
-
-@media (min-width: 320px) and (max-width: 587px) {
-    .contactMeTitle{
-        font-size: 30px;
-    }
-    .contactMeContainer form{
-        width: 90vw;
-    }
-    .contactMeContainer form button{
-        width: 40%;
-    }
-}
-
-@media (min-width: 587px) and (max-width: 980px) {
-    .contactMeContainer form{
-        width: 90vw;
-    }
+@media (min-width: 618px) and (max-width: 980px) {
+  .contactMeContainer form {
+    width: 70vw;
+  }
 }

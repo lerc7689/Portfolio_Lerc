@@ -1,15 +1,15 @@
-.headerContainer{
-    /* background-color: rgb(18, 18, 58); */
-    width: 100%;
-    height: 50px;
-    position:fixed;
-    z-index: 1;
-    box-shadow: 1px 0 10px 1px black;
-    /* transition: 0.5s; */
-    /* display: flex;
+.headerContainer {
+  /* background-color: rgb(18, 18, 58); */
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 1px 0 10px 1px black;
+  /* transition: 0.5s; */
+  /* display: flex;
     flex-direction: row; */
-    /* background-image: linear-gradient(rgba(218, 32, 32, 0.733), rgba(0, 0, 0, 0.664)) */
-    /* filter: blur(10px); */
+  /* background-image: linear-gradient(rgba(218, 32, 32, 0.733), rgba(0, 0, 0, 0.664)) */
+  /* filter: blur(10px); */
 }
 /* .headerContainer i {
     padding: 5px;
@@ -18,52 +18,54 @@
     font-size: 20px;
 } */
 /* desde qui */
-.ShortHeaderContainer{
-    width: 45px;
-    height: auto;
-    /* display: flex; */
-    top: 5%;
-    right: 1%;
-    height: 60%;
-    flex-direction: column;
-    gap: 20px;
+.ShortHeaderContainer {
+  width: 45px;
+  /* display: flex; */
+  top: 5%;
+  right: 1%;
+  height: 60%;
+  flex-direction: column;
+  gap: 20px;
 
-    /* max-width: 30%;
+  /* max-width: 30%;
     height: 40px;
     position:fixed;
     top: 20px;
     right: 5%;  */
-    padding: 0px;
-    border-radius: 20px;
-    background-color: rgb(18, 18, 58);
-    box-shadow: 1px 0 10px 1px rgb(168, 168, 168);
-    transition: 0.5s;
-    overflow: hidden;
+  padding: 0px;
+  border-radius: 20px;
+  background-color: rgb(18, 18, 58);
+  box-shadow: 1px 0 10px 1px rgb(168, 168, 168);
+  transition: 0.5s;
+  overflow: hidden;
 }
-.ShortHeaderContainer i{
-    font-size: 17px;
-    background-color:transparent;
-    /* padding: 5px;
+.ShortHeaderContainer i {
+  font-size: 17px;
+  background-color: transparent;
+  /* padding: 5px;
     border-radius: 50%;  */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
-.ShortHeaderContainer i:hover{
-    /* box-shadow: 0px 0 20px 10px rgb(243, 179, 42); */
-    /* border-radius: 50%;
+.ShortHeaderContainer i:hover {
+  /* box-shadow: 0px 0 20px 10px rgb(243, 179, 42); */
+  /* border-radius: 50%;
     border: 2px solid rgb(243, 179, 42); 
     /* width: 0px; */
-    /* height: 5px; */
-    /* color: aqua; */
+  /* height: 5px; */
+  /* color: aqua; */
 }
 
-.active i{
-    /* color: white; */
-    /* border-bottom: 1px solid red;
+.active i {
+  /* color: white; */
+  /* border-bottom: 1px solid red;
     padding-bottom: 5px; */
-    /* border: 3px solid blue;*/
-    /* font-size: 25px; */
-    /* box-shadow:inset 0px 0 10px 3px transparent; */
-    background-color: white;
-    /* transition: 0.1s; */
+  /* border: 3px solid blue;*/
+  /* font-size: 25px; */
+  /* box-shadow:inset 0px 0 10px 3px transparent; */
+  background-color: white;
+  /* transition: 0.1s; */
 }
 /* .active{
     color: red;
@@ -73,63 +75,64 @@
     border-radius: 50%;
 } */
 
-.ShortHeaderContainer > .headerList{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
+.ShortHeaderContainer > .headerList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
 }
 /* hasta aqui */
-.headerList{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    justify-content:end;
-    align-items: end;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    gap: 60px;
-    font-size: 15px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
-    "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    transition: 0.5s;
+.headerList {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  gap: 60px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: 0.5s;
 }
 
-.hidden{
-    display: none;
-    transition: 0.5s;
+.hidden {
+  display: none;
+  transition: 0.5s;
 }
 
-i{
-    color:rgb(243, 179, 42);
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 50%; 
+i {
+  color: rgb(243, 179, 42);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-.headerOption{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
+.headerOption {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
 }
 
-.headerOption:hover{
-    transform: translateY(-5px);
-    transition: 0.3s;
-    cursor: pointer;
+.headerOption:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.fa-moon{
-    color:#96B6C5;
-    /* transform: translateX(40px); */
-    width: 30px;
+.fa-moon {
+  color: #96b6c5;
+  /* transform: translateX(40px); */
+  width: 30px;
 }
-.fa-sun{
-    color:yellow;
-    /* transform: translateX(40px); */
-    transition: transform 0.5s;
+.fa-sun {
+  color: yellow;
+  /* transform: translateX(40px); */
+  transition: transform 0.5s;
 }
 /*  */
 /* .prueba{
@@ -138,34 +141,42 @@ i{
     transition: transform 0.5s;
 } */
 /*  */
-@media (min-width: 320px) and (max-width: 587px) {
+@media (min-width: 320px) and (max-width: 617px) {
+  .headerContainer {
+    height: 40px;
+  }
 
-    .headerContainer{
-        height: 40px;
-        justify-content: start;
-        align-items: start;
-    }
+  .headerList {
+    gap: 6px;
+    font-size: 7px;
+    margin-right: 5px;
+    padding-left: 0;
+  }
 
-    .headerList{
-        gap: 8px;
-        font-size: 10px;
-        margin-right: 10px;
-        padding-left: 0;
-    }
+  .headerList i {
+    font-size: 15px;
+  }
+  .ShortHeaderContainer {
+    height: 50%;
+    width: 30px;
+    padding: 5px;
+  }
 
-    .headerList i{
-        font-size: 13px;
-    }
+  .active i {
+    padding: 2px;
+  }
 }
 
-@media (min-width: 588px) and (max-width: 980px) {
+@media (min-width: 618px) and (max-width: 980px) {
+  .headerList {
+    font-size: 15px;
+    gap: 25px;
+  }
 
-    .headerList{
-        font-size: 15px;
-        gap: 25px;
-    }
-
-    .headerList i{
-        font-size: 20px;
-    }
+  .headerList i {
+    font-size: 20px;
+  }
+  .ShortHeaderContainer {
+    padding: 10px;
+  }
 }

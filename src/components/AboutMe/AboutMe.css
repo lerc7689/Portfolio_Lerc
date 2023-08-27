@@ -1,118 +1,127 @@
-.aboutMeContainer{
-    width: 90vw;
-    position: relative;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    margin-left: 5%;
-    margin-bottom: 80px;
-    /* background-color: aqua; */
-    opacity: 0;
-    transition: opacity 0.5s;
+.aboutMeContainer {
+  width: 90vw;
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-left: 5%;
+  margin-bottom: 80px;
+  /* background-color: aqua; */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
-.show{
-    opacity: 1;
+.show {
+  opacity: 1;
 }
 
-.imgContainer{
-    width: 340px;
-    /* height: 300px; */
-    /* margin-bottom: 50px; */
-    /* scroll-margin-top: 100vh; */
-    opacity:0;
-    transition: opacity 0.5s;   
-    /* border-radius: 50%;
+.imgContainer {
+  width: 340px;
+  /* height: 300px; */
+  /* margin-bottom: 50px; */
+  /* scroll-margin-top: 100vh; */
+  opacity: 0;
+  transition: opacity 0.5s;
+  /* border-radius: 50%;
     overflow: hidden; */
 }
 
-.visible_imgContainer{
-    animation: moveImage 1.5s alternate forwards;  
+.visible_imgContainer {
+  animation: moveImage 1.5s alternate forwards;
 }
 
 @keyframes moveImage {
-    0%{
-        transform: translateX(-700px);
-        opacity: 1;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-700px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .imgContainer img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    animation: moveImg;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  animation: moveImg;
 }
 
-.AboutMeInfoContainer{
-    /* border: 5px solid #fca311; */
-    border-radius: 10px;
-    width: 40vw;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
-    padding: 15px;
-    color: black;
+.AboutMeInfoContainer {
+  /* border: 5px solid #fca311; */
+  border-radius: 10px;
+  width: 40vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  padding: 15px;
+  color: black;
 }
 
-.visible_AboutMeInfoContainer{
-    animation: AboutMeInfoContainer_animation  1.5s alternate forwards;  
+.visible_AboutMeInfoContainer {
+  animation: AboutMeInfoContainer_animation 1.5s alternate forwards;
 }
 
 @keyframes AboutMeInfoContainer_animation {
-    from{
-        transform: scale(0.1);
-    }
-    to{
-        transform: scale(01);
-    }
-} 
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(01);
+  }
+}
 
 .aboutMeMessage {
-    font-family: Poppins,sans-serif;
-    text-align: justify;  
-    font-size: larger;
+  font-family: Poppins, sans-serif;
+  text-align: justify;
+  font-size: larger;
 }
 
-.aboutMeList{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+.aboutMeList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  color: black;
+}
+
+.aboutMeList li {
+  display: flex;
+  gap: 15px;
+}
+
+.aboutMeList li b {
+  margin-right: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 617px) {
+  .aboutMeContainer {
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 200px;
+  }
+  .AboutMeInfoContainer {
+    width: 85vw;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .aboutMeList {
+    /* justify-content: start; */
+  }
+}
+
+@media (min-width: 618px) and (max-width: 980px) {
+  .aboutMeContainer {
+    /* margin-bottom: 60px; */
+    flex-direction: column;
+  }
+  /* .aboutMeList {
     justify-content: start;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-    color: black;
-}
-
-.aboutMeList li{
-   display: flex;
-   gap: 15px;
-}
-
-.aboutMeList li b{
-    margin-right: 5px;
-}
-
-@media (min-width: 320px) and (max-width: 587px) {
-    .aboutMeContainer{
-        margin-bottom: 60px;
-    }
-    .AboutMeInfoContainer{
-        width: 85vw;
-        padding: 10px;
-    }
-    .aboutMeList{
-        justify-content: start;
-    }
-}
-
-@media (min-width: 588px) and (max-width: 980px) {
-    .aboutMeList{
-        justify-content: start;
-    }
+  } */
 }
