@@ -1,17 +1,18 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    position: relative;
-    user-select: none;
-    font-family: 'Exo 2', sans-serif;
+body {
+  position: relative;
+  user-select: none;
+  font-family: "Exo 2", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.darkMode{
-    background-color: rgb(20, 20, 20);
-    color: white;
+.darkMode {
+  background-color: rgb(20, 20, 20);
+  color: white;
 }
