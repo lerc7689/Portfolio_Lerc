@@ -17,7 +17,7 @@
 }
 
 .imgContainer {
-  width: 340px;
+  width: 400px;
   /* height: 300px; */
   /* margin-bottom: 50px; */
   /* scroll-margin-top: 100vh; */
@@ -54,9 +54,9 @@
   border-radius: 10px;
   width: 40vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: white;
+  /* background-color: white; */
   padding: 15px;
-  color: black;
+  /* color: black; */
 }
 
 .visible_AboutMeInfoContainer {
@@ -68,7 +68,7 @@
     transform: scale(0.1);
   }
   to {
-    transform: scale(01);
+    transform: scale(1);
   }
 }
 
@@ -81,12 +81,13 @@
 .aboutMeList {
   list-style: none;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 15px;
   margin-top: 20px;
-  color: black;
+  /* color: black; */
 }
 
 .aboutMeList li {

@@ -68,7 +68,7 @@ const NavBar = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
             const targetId = entry.target.getAttribute("id");
-            console.log(targetId);
+            // console.log(targetId);
 
             navLinks.forEach((link) => {
               if (link.getAttribute("href") === `#${targetId}`) {
@@ -104,7 +104,7 @@ const NavBar = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
             const targetId = entry.target.getAttribute("id");
-            console.log(targetId);
+            // console.log(targetId);
 
             navLinks.forEach((link) => {
               if (link.getAttribute("href") === `#${targetId}`) {

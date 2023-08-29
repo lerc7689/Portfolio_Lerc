@@ -39,8 +39,8 @@ const AboutMe = () => {
           <ul className="aboutMeList">
             <li>
               {/* <!-- location --> */}
-              <span class="about-info-logo">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span className="about-info-logo">
+                <i className="fas fa-map-marker-alt" aria-hidden="true"></i>
               </span>
               <span>
                 <b>Location:</b>Santo Domingo, Republica Dominicana
@@ -48,8 +48,8 @@ const AboutMe = () => {
             </li>
             {/* <!-- interests --> */}
             <li>
-              <span class="about-info-logo">
-                <i class="fas fa-gamepad" aria-hidden="true"></i>
+              <span className="about-info-logo">
+                <i className="fas fa-gamepad" aria-hidden="true"></i>
               </span>
               <span>
                 <b>Interests:</b>Motocross, Excercise, Nature
@@ -57,8 +57,8 @@ const AboutMe = () => {
             </li>
             {/* <!-- study --> */}
             <li>
-              <span class="about-info-logo">
-                <i class="fas fa-school" aria-hidden="true"></i>
+              <span className="about-info-logo">
+                <i className="fas fa-school" aria-hidden="true"></i>
               </span>
               <span>
                 <b>Study:</b>Academlo
@@ -66,8 +66,8 @@ const AboutMe = () => {
             </li>
             {/* <!-- degree --> */}
             <li>
-              <span class="about-info-logo">
-                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              <span className="about-info-logo">
+                <i className="fas fa-graduation-cap" aria-hidden="true"></i>
               </span>
               <span>
                 <b>Degree:</b>systems and computer engineer
@@ -75,8 +75,8 @@ const AboutMe = () => {
             </li>
             {/* <!-- mail --> */}
             <li>
-              <span class="about-info-logo">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span className="about-info-logo">
+                <i className="fas fa-envelope" aria-hidden="true"></i>
               </span>
               <span>
                 <b>Mail:</b>lerc7689@hotmail.com{" "}
@@ -84,8 +84,8 @@ const AboutMe = () => {
             </li>
             {/* <!-- phone --> */}
             <li>
-              <span class="about-info-logo">
-                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              <span className="about-info-logo">
+                <i className="fas fa-phone-alt" aria-hidden="true"></i>
               </span>
               <span>
                 <b>Phone:</b>829-721-3784
