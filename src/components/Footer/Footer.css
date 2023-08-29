@@ -117,7 +117,7 @@
     background-color: red;
   } */
   .socialMediaIconsContainer {
-    gap: 5px;
+    gap: 10px;
   }
   .socialMediaIconsContainer h3 {
     font-size: small;

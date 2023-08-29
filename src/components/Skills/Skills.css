@@ -14,11 +14,11 @@
   margin-bottom: 80px;
   opacity: 0;
   transition: opacity 0.5s, transform 1s;
-  transform: translateX(100px);
+  transform: translateY(10px);
 }
 .show {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateY(0px);
 }
 .skillsContainer {
   display: flex;
